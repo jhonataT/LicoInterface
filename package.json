@@ -1,0 +1,24 @@
+{
+  "name": "Add_one_bot",
+  "version": "1.0.0",
+  "description": "Add bots with specific functions in whatsapp groups...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhN-Te/Add_one_bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhN-Te/Add_one_bot/issues"
+  },
+  "homepage": "https://github.com/JhN-Te/Add_one_bot#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
