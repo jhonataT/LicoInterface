@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add whatsapp bot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/styles/main.css">
+</head>
+<body>
+    <script src="../../public/scripts/index.js"></script>
+    <div class="elementBackground">        
+        <p class="title">BOT-LIC🤖</p>
+        <p class="textBackground">Selecione os comandos para o seu grupo</p>
+        <div class="backgroundBoxes">
+            <div class="bacgroundBox">
+                <div class="padding">
+                    <div class="boxTitle">
+                        <p class="titleBox">Geral</p>
+                    </div>
+                    <div class="boxContent">                        
+                        <div class="boxItem" onclick="checked(gItem1)" >  
+                            <div class="barItem" id="gItem1"></div>                          
+                            <div class="contentItem">
+                                <p class="titleItem">!help</p>
+                                <p class="textItem">informações do bot</p>
+                            </div>
+                        </div>
+                        <div class="boxItem" onclick="checked(gItem2)">
+                            <div class="barItem" id="gItem2"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!all</p>
+                                <p class="textItem">marca todos do grupo</p>
+                            </div>
+                        </div>
+                        <div class="boxItem" onclick="checked(gItem3)">
+                            <div class="barItem" id="gItem3"></div>
+
+                            <div class="contentItem">
+                                <p class="titleItem">!sticker</p>
+                                <p class="textItem">gera um figurinha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bacgroundBox">
+                <div class="padding">
+                    <div class="boxTitle">
+                        <p class="titleBox">Counter Strike</p>
+                    </div>
+                    <div class="boxContent">
+                        <div class="boxItem" onclick="checked(csItem1)">
+                            <div class="barItem" id="csItem1"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!live</p>
+                                <p class="textItem">partidas ao vivo</p>
+                            </div>
+                        </div>
+                        <div class="boxItem" onclick="checked(csItem2)">
+                            <div class="barItem" id="csItem2"></div>
+
+                            <div class="contentItem">
+                                <p class="titleItem">!team</p>
+                                <p class="textItem">última partida do time</p>
+                            </div>
+                        </div>                               
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <p class="textBackground">Através do link do seu grupo no WhatsApp, adicione o LICO</p>
+        <input type="text" class="inputLink" name="linkWpp" placeholder="Digite o link do grupo">
+        <br>
+        <button class="buttonAdicionar">Adicionar</button>
+    </div>
+</body>
+</html>
