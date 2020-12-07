@@ -6,9 +6,9 @@
     <title>Add whatsapp bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../public/styles/main.css">
-    <link rel="script" href="../../public/scripts/index.js">
 </head>
 <body>
+    <script src="../../public/scripts/index.js"></script>
     <div class="elementBackground">        
         <p class="title">BOT-LIC🤖</p>
         <p class="textBackground">Selecione os comandos para o seu grupo</p>
@@ -19,22 +19,23 @@
                         <p class="titleBox">Geral</p>
                     </div>
                     <div class="boxContent">                        
-                        <div class="boxItem" onclick="res()" >                            
-                            <div class="barItem"></div>
+                        <div class="boxItem" onclick="checked(gItem1)" >  
+                            <div class="barItem" id="gItem1"></div>                          
                             <div class="contentItem">
                                 <p class="titleItem">!help</p>
                                 <p class="textItem">informações do bot</p>
                             </div>
                         </div>
-                        <div class="boxItem">
-                            <div class="barItem"></div>
+                        <div class="boxItem" onclick="checked(gItem2)">
+                            <div class="barItem" id="gItem2"></div>
                             <div class="contentItem">
                                 <p class="titleItem">!all</p>
                                 <p class="textItem">marca todos do grupo</p>
                             </div>
                         </div>
-                        <div class="boxItem">
-                            <div class="barItem"></div>
+                        <div class="boxItem" onclick="checked(gItem3)">
+                            <div class="barItem" id="gItem3"></div>
+
                             <div class="contentItem">
                                 <p class="titleItem">!sticker</p>
                                 <p class="textItem">gera um figurinha</p>
@@ -49,15 +50,16 @@
                         <p class="titleBox">Counter Strike</p>
                     </div>
                     <div class="boxContent">
-                        <div class="boxItem">
-                            <div class="barItem"></div>
+                        <div class="boxItem" onclick="checked(csItem1)">
+                            <div class="barItem" id="csItem1"></div>
                             <div class="contentItem">
                                 <p class="titleItem">!live</p>
                                 <p class="textItem">partidas ao vivo</p>
                             </div>
                         </div>
-                        <div class="boxItem">
-                            <div class="barItem"></div>
+                        <div class="boxItem" onclick="checked(csItem2)">
+                            <div class="barItem" id="csItem2"></div>
+
                             <div class="contentItem">
                                 <p class="titleItem">!team</p>
                                 <p class="textItem">última partida do time</p>
