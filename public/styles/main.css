@@ -1,58 +1,180 @@
 body {
-    background-color: #e8ebf3;
-    height: 100vh;
+    background-color: #f7fffa;
+    height: 100%;
+    padding: 40px;
 }
 
-.Container {
-    font-family: 'Roboto Mono', monospace;
-    color: #414856;
-    /* border: 1px solid #8F8CE7; */
-    border-radius: 6px;
-    background-color: #fff;
-    width: 60%;
-    position: relative;
-    bottom: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3% 10% 10% 20%;
-    padding-bottom: 27%;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.Container h2,
-.Container h4 {
-    position: relative;
-    top: 50px;
-}
-
-.Form form input {
-    background-color: #E3E1E2;
-    width: 27rem;
-    height: 2.8rem;
-    outline: none;
-    position: relative;
-    top: 210px;
-    border: 0;
+.elementBackground {
+    border-radius: 45px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+    padding: 25px;
     text-align: center;
-    border-bottom: 1px solid #8F8CE7;
-    border-radius: 3rem;
+}
+
+.title {
+    font-size: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #363636;
+}
+
+.textBackground {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #363636;
+}
+
+
+.backgroundBoxes {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: auto;
+    align-items: flex-start;
+    display: -webkit-box;
+}
+
+.bacgroundBox {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.padding {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.boxTitle {
+    background-color: #075e54;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: auto;
+    position: absolute;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -20px;    
+    box-sizing: border-box;
+    float: left;
+}
+
+.titleBox {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 19px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.boxContent {
+    border-radius: 25px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.075);
+    margin-left: 20px;
+    margin-right: 20px;    
+    width: 90%;
+    height: auto;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+}
+
+.boxItem {
+    width: 100%;
+    display: -webkit-box;
+    margin-bottom: 4%;
+}
+
+.barItem {
+    background-color: #075e54;
+    width: 4px;
+}
+
+.titleItem {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 19px;
+    color:  #075e54;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 
 }
 
-.Button button {
-    background-color: #8F8CE7;
-    width: 27rem;
-    height: 3rem;
-    position: relative;
-    top: 215px;
-    /* left: 447px; */
-    border-style: none;
-    border-radius: 3rem;
+.textItem {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:  #075e54;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 
-.Button button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.contentItem {
+    width: 100%;
+    cursor: pointer;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    box-sizing: border-box;    
 }
 
+.inputLink {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-top: 25px;
+    width: 85%;
+    height: 40px;
+    border-radius: 18px;
+    border: 3px solid #363636; 
+    -webkit-transition: 0.5s;
+    transition:0.5s ;
+    outline: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    
+}
+
+.inputLink:focus{
+    border: 3px solid #075e54;
+    text-align: center; 
+}
+
+.buttonAdicionar {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 25%;
+    height: 40px;
+    border-radius: 18px;
+    background-color: #075e54;
+    border: none;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition:0.5s ;
+}
+
+.buttonAdicionar:hover {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);  
+    background-color: #064d44;
+}

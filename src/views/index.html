@@ -4,38 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add whatsapp bot</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../public/styles/main.css">
-    <link rel="stylesheet" href="../../public/styles/checklist.css">
+    <link rel="script" href="../../public/scripts/index.js">
 </head>
 <body>
-    <div id="checklist">
-        <input type="checkbox" id="00" name="0" value="0" checked>
-        <label for="00">commands</label>
-        <input type="checkbox" id="01" name="1" value="1">
-        <label for="01">!ALL</label>
-        <input type="checkbox" id="02" name="2" value="2">
-        <label for="02">!STICKER</label>
-        <input type="checkbox" id="03" name="3" value="3">
-        <label for="03">!TEAM</label>
-        <input type="checkbox" id="04" name="4" value="4">
-        <label for="04">!LIVE</label>
-        <input type="checkbox" id="05" name="5" value="5">
-        <label for="05">!LIVE(INFO)</label>
-    </div>
-    
-    <div class="Container">
-        <h2>🤖BOT LICO</h2>
-        <h4>Através do link do seu grupo no whatsapp, adicione o LICO</h4>
-        <div class="Form">
-            <form>
-                <input type="text" id="fname" name="fname" placeholder="Link do grupo"><br> 
-            </form>
+    <div class="elementBackground">        
+        <p class="title">BOT-LIC🤖</p>
+        <p class="textBackground">Selecione os comandos para o seu grupo</p>
+        <div class="backgroundBoxes">
+            <div class="bacgroundBox">
+                <div class="padding">
+                    <div class="boxTitle">
+                        <p class="titleBox">Geral</p>
+                    </div>
+                    <div class="boxContent">                        
+                        <div class="boxItem" onclick="res()" >                            
+                            <div class="barItem"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!help</p>
+                                <p class="textItem">informações do bot</p>
+                            </div>
+                        </div>
+                        <div class="boxItem">
+                            <div class="barItem"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!all</p>
+                                <p class="textItem">marca todos do grupo</p>
+                            </div>
+                        </div>
+                        <div class="boxItem">
+                            <div class="barItem"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!sticker</p>
+                                <p class="textItem">gera um figurinha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bacgroundBox">
+                <div class="padding">
+                    <div class="boxTitle">
+                        <p class="titleBox">Counter Strike</p>
+                    </div>
+                    <div class="boxContent">
+                        <div class="boxItem">
+                            <div class="barItem"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!live</p>
+                                <p class="textItem">partidas ao vivo</p>
+                            </div>
+                        </div>
+                        <div class="boxItem">
+                            <div class="barItem"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!team</p>
+                                <p class="textItem">última partida do time</p>
+                            </div>
+                        </div>                               
+                    </div>  
+                </div>
+            </div>
         </div>
-    
-        <div class="Button">
-            <button>ADICIONAR</button>
-        </div>
+        <p class="textBackground">Através do link do seu grupo no WhatsApp, adicione o LICO</p>
+        <input type="text" class="inputLink" name="linkWpp" placeholder="Digite o link do grupo">
+        <br>
+        <button class="buttonAdicionar">Adicionar</button>
     </div>
 </body>
 </html>
