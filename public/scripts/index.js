@@ -4,7 +4,6 @@ const checked = (id) => {
 }
 
 const validate = () => {
-    
     const PREFIX = "https://chat.whatsapp.com/";
     const link = document.getElementById("linkWpp");
    
@@ -13,5 +12,5 @@ const validate = () => {
         link.value = '';
         link.placeholder = 'LINK INVÁLIDO, TENTE NOVAMENTE!';
     }
-
+    return false;
 }
