@@ -69,10 +69,10 @@
                 </div>
             </div>
         </div>
-        <form method="POST" action="link" name="linkForm">
+        <form method="POST" action="link" name="linkForm" onsubmit="return validate(this);" >
             <p class="textBackground">Através do link do seu grupo no WhatsApp, adicione o LICO:</p>
             <input type="text" id="linkWpp" class="inputLink" name="linkWpp" placeholder="Digite o link do grupo">
-            <button type="submit" class="buttonAdicionar" onclick="validate()">Adicionar</button>
+            <button type="submit" id="submitButton" class="buttonAdicionar">Adicionar</button>
         </form>
     </div>
 </body>
