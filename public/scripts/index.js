@@ -16,7 +16,6 @@ const validate = (link) => {
     // Verificar quantas classes 'checked' estão ativas:
     const checkedInfo = verifyCheckedClass();
     link.linkWpp.value = link.linkWpp.value.concat(checkedInfo);
-    console.log(link.linkWpp.value);
     return true;
 };
 
