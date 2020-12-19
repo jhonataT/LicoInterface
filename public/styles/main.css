@@ -83,6 +83,10 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    -webkit-appearance: push-button;
+    -moz-appearance: button; 
+    display: inline-block;
+    cursor: pointer;
 }
 
 .boxContent {
