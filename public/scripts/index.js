@@ -6,10 +6,10 @@ const checked = (id) => {
 const validate = (link) => {
     const PREFIX = "https://chat.whatsapp.com/";
     if(!link.linkWpp.value.startsWith(PREFIX)){
-        link.classList.add('invalid');
-        link.value = '';
-        link.placeholder = 'LINK INVÁLIDO, TENTE NOVAMENTE!';
+        link.linkWpp.classList.add('invalid');
+        link.linkWpp.value = '';
+        link.linkWpp.placeholder = 'LINK INVÁLIDO, TENTE NOVAMENTE!';
         return false;
-    }
+    } 
     return true;
 }

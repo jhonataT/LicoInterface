@@ -18,9 +18,6 @@ app.post('/link', (req, res) => {
     res.sendFile(path.resolve(__dirname, "views", "index.html"));
     const link = req.body.linkWpp;
     console.log(`link = ${link}`);
-    const linkForm = req.body.linkForm;
-    console.log(linkForm);
-
 });
 
 app.listen(port);
