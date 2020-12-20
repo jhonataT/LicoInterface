@@ -36,6 +36,17 @@ body {
     color: #363636;
 }
 
+.add {
+    position: relative;
+    top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #075e5487;
+    text-shadow: #075e54 0.5px 0.5px 0.5px;
+}
 
 .backgroundBoxes {
     text-align: center;
@@ -166,6 +177,10 @@ body {
 
 .inputLink:focus{
     border: 3px solid #075e54;
+}
+
+.inputLink .link {
+    color: red;
 }
 
 .invalid::placeholder{
