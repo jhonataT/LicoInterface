@@ -12,13 +12,13 @@
     <div class="elementBackground">        
         <p class="title">BOT-LIC🤖</p>
         <p class="textBackground">Selecione os comandos para o seu grupo</p>
-        <div class="backgroundBoxes">
+        <div class="backgroundBoxes" id="scroll-geral">
             <div class="bacgroundBox">
                 <div class="padding">
                     <div class="boxTitle">
                         <p class="titleBox">Geral</p>
                     </div>
-                    <div class="boxContent">                        
+                    <div class="boxContent" id="show">                        
                         <div class="boxItem" onclick="checked(gHelp)" >  
                             <div class="barItem checked" id="gHelp"></div>                          
                             <div class="contentItem">
@@ -63,6 +63,36 @@
                             <div class="contentItem">
                                 <p class="titleItem">!team</p>
                                 <p class="textItem">última partida do time</p>
+                            </div>
+                        </div>                               
+                    </div>  
+                </div>
+            </div>
+            <div class="bacgroundBox">
+                <div class="padding">
+                    <div class="boxTitle">
+                        <p class="titleBox">Adm</p>
+                    </div>
+                    <div class="boxContent">
+                        <div class="boxItem" onclick="checked(showAdms)">
+                            <div class="barItem" id="showAdms"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!adms</p>
+                                <p class="textItem">Mostra todos os adms do grupo</p>
+                            </div>
+                        </div>
+                        <div class="boxItem" onclick="checked(promote)">
+                            <div class="barItem" id="promote"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!promote @user</p>
+                                <p class="textItem">Promove um membro do grupo</p>
+                            </div>
+                        </div>
+                        <div class="boxItem" onclick="checked(denote)">
+                            <div class="barItem" id="denote"></div>
+                            <div class="contentItem">
+                                <p class="titleItem">!denote @user</p>
+                                <p class="textItem">Remove o adm de um membro do grupo</p>
                             </div>
                         </div>                               
                     </div>  

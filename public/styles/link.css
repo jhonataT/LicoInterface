@@ -70,31 +70,12 @@ body {
     background-color: #FFF;
 }
 
-#scroll-geral {
-    height:auto;
-    overflow:scroll;
-}
-
-#scroll-geral::-webkit-scrollbar {
-    width: 0px;
-    height: 10px;              
-}
-
-#scroll-geral::-webkit-scrollbar-track {
-    background: #36363612;       
-}
-
-#scroll-geral::-webkit-scrollbar-thumb {
-    background-color: #075e54;    
-    border-radius: 20px;       
-    border: 3px solid #363636;  
-}
-
 .boxTitle {
     background-color: #075e54;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
     width: auto;
     height: auto;
+    position: absolute;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -104,7 +85,7 @@ body {
     box-sizing: border-box;
     float: left;
 }
-    
+
 .titleBox {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -112,12 +93,13 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    -webkit-appearance: push-button;
+    -moz-appearance: button; 
     display: inline-block;
     cursor: pointer;
-    user-select: none;
 }
 
- .boxContent {
+.boxContent {
     border-radius: 25px;
     background-color: #FFF;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.075);
@@ -208,7 +190,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: normal;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 25px;
     width: 25%;
     height: 40px;
