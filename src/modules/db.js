@@ -23,13 +23,16 @@ class Database {
             },
             commands: {
                 type: Sequelize.STRING
+            },
+            groupId: {
+                type: Sequelize.STRING
             }
         });
-        // Grupos.sync( { force: true } ); // Criar / substituir uma table;
+        // Groups.sync( { force: true } ); // Criar / substituir uma table;
         return Groups;
     }
     //////////////////////////////////////
-    // ADD NEW ITEM IN DATABASE:
+    // ADD NEW ITEM TO THE DATABASE:
     static async addItem(linkGroup, cmds){
         const dataGroups =  await this.dataTable();
         let linkExists = false;
@@ -45,7 +48,8 @@ class Database {
         const Groups = await this.table();
         Groups.create( {
             link: `${linkGroup}`,
-            commands: `${cmds}`
+            commands: `${cmds}`,
+            groupId: 'false'
         })
     }
     //////////////////////////////////////
