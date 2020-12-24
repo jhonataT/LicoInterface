@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const Database = require('./modules/db');
 const path = require('path');
 const app = express();
-const port = '3306';
+const port = '3000';
 
 app.use('/public', express.static('public'));
 
