@@ -1,10 +1,11 @@
 const express = require('express');
 const { link } = require('fs');
 const bodyParser = require('body-parser');
-const Database = require('./modules/db');
 const path = require('path');
 const app = express();
 const port = '3000';
+
+let data = new Array();
 
 app.use('/public', express.static('public'));
 
@@ -19,12 +20,19 @@ app.post('/link', async (req, res) => {
     let link = req.body.linkWpp;
     const cmds = link.substring(link.indexOf('|'));
     link = link.substring(0, link.indexOf('|'));
+
+    const db = {
+        link: link,
+        commands: cmds
+    }
     
-    const linkverify = await Database.addItem(link, cmds);
-    if(linkverify)
-    console.log("This link exists!");
+    data = data.push(db);
         
     res.sendFile(path.resolve(__dirname, "views", "link.html"));    
+});
+
+app.get('/api', (req, res) => {
+    res.send(JSON.stringify(data));
 });
 
 app.listen(port);
