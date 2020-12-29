@@ -20,13 +20,12 @@ app.post('/link', async (req, res) => {
     let link = req.body.linkWpp;
     const cmds = link.substring(link.indexOf('|'));
     link = link.substring(0, link.indexOf('|'));
-
-    const db = {
+    
+    data.push({
         link: link,
         commands: cmds
-    }
-    
-    data = data.push(db);
+    });
+    console.log(data);
         
     res.sendFile(path.resolve(__dirname, "views", "link.html"));    
 });
