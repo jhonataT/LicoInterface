@@ -23,7 +23,8 @@ app.post('/link', async (req, res) => {
     
     data.push({
         link: link,
-        commands: cmds
+        commands: cmds,
+        groupId: 'false'
     });
     console.log(data);
         
