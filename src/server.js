@@ -3,7 +3,7 @@ const { link } = require('fs');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const port = '3000';
+const port = '5000';
 
 let data = new Array();
 
@@ -35,4 +35,4 @@ app.get('/api', (req, res) => {
     res.send(JSON.stringify(data));
 });
 
-app.listen(port);
+app.listen(process.env.PORT || port);
